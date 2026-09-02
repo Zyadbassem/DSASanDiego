@@ -1,7 +1,7 @@
 def main():
-    x = int(input('Enter the first num: '))
-    y = int(input('Enter the second num: '))
+    numbers = list(map(int, input("Enter numbers separated by spaces: ").split()))
+    print(numbers) 
 
-    print(x+y)
+    print(numbers[0] * numbers[1])
 
 main()
