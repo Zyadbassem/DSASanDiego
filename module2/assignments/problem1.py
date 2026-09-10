@@ -11,5 +11,4 @@ def fib():
     return arr[n]
 
 
-
 print(fib())
