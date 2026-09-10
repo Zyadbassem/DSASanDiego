@@ -1,10 +1,8 @@
 def main():
     arr = []
     num = 0
-    while num != -10:
-        num = int(input('Enter a number (-10 to end): '))
-        if num != -10:
-            arr.append(num)
+    input()
+    arr = list(map(int, input().split(' ')))
 
     
     maxNums = [-1, -1]
