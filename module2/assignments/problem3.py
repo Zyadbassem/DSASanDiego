@@ -5,7 +5,6 @@ def pisano(m):
         prev, curr = curr, (prev + curr) % m
         if prev == 0 and curr == 1:
             arr.pop() 
-            print(arr) # remove the trailing 0 of the new cycle
             return arr
         arr.append(curr)
 
