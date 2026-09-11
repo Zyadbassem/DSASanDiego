@@ -1,7 +1,6 @@
 def gcd(n1: int, n2: int):
     if n2 == 0:
         return n1
-    
     nPrime = n1 % n2
     return gcd(n2, nPrime)
 
