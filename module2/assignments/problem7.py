@@ -14,4 +14,3 @@ def runner():
 
 
 print(runner())
-print(67.0 * 1634.0)

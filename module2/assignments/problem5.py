@@ -21,7 +21,7 @@ def partial_sum():
     start = arr[0]
     stop = arr[1]
     
-    return abs(las_dig_of_sum_fib(stop) - las_dig_of_sum_fib(start - 1))
+    return (las_dig_of_sum_fib(max(stop, 0)) - las_dig_of_sum_fib(max(start - 1, 0))) % 10
 
 
 

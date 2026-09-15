@@ -12,7 +12,7 @@ def runner():
 
     greatest_div = gcd(n, m)
 
-    return (n * m) / greatest_div
+    return int((n * m) / greatest_div)
 
 
 print(runner())

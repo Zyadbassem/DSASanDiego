@@ -1,5 +1,7 @@
 def fib():
     n = int(input())
+    if n == 0 or n == 1:
+        return 1
     arr = [0] * (n+1)
 
     arr[0] = 0
