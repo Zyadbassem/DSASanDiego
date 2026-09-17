@@ -1,8 +1,8 @@
 def maxmizing_loot(weights: list, values: list, W: float):
     value_per_one = []
 
-    for i in range(0, len(values)):
-        value_per_one.append({'value': (values[i]/weights[i]), 'amount': weights[i]})
+    for value, weight in zip(values, weights):
+        value_per_one.append({'value': (value/weight), 'amount': weight})
     
     sorted_values = sorted(value_per_one, key=lambda curr: curr['value'], reverse=True)
     
