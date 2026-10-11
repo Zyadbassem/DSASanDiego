@@ -24,8 +24,21 @@ def maxmizing_loot(weights: list, values: list, W: float):
         
 
 
+def main():
+    weights = []
+    values = []
 
+    f_line = [int(x) for x in input().split(' ')]
+    n_of_lines = f_line[0]
+    max_c = f_line[1]
+
+    for i in range(0, n_of_lines):
+        curr_line =  [int(x) for x in input().split(' ')]
+        values.append(curr_line[0])
+        weights.append(curr_line[1])
+    
+    print(maxmizing_loot(weights, values, max_c))
         
 
 
-print(maxmizing_loot([5, 4, 3], [30, 28, 24], 9))
+main()

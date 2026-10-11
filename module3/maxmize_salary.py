@@ -7,5 +7,9 @@ def max_salary(a: list):
     
     return num
 
-print(max_salary([4, 2, 9, 5]))
+def main():
+    count = input()
+    nums = [ int(x) for x in list(input().replace(' ', ''))]
+    print(max_salary(nums))
 
+main()
